@@ -16,7 +16,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-test('Customer registration validated in frontend, admin and database @master @regression @end-to-end @db @web', async ({
+test('Customer registration validated in frontend, admin and database @master @regression @e2e @db', async ({
     storeHomePage,
     registerPage,
     accountSuccessPage,
