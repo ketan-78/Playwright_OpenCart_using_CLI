@@ -22,5 +22,17 @@
     "luxon": "^3.7.2",
     "mysql2": "^3.24.4",
     "xlsx": "^0.18.5"
-  }
+  },
+  "scripts": {
+    "test:api": "playwright test --grep @api",
+    "test:web": "playwright test --grep @web",
+    "test:master": "playwright test --grep @master",
+    "test:sanity": "playwright test --grep @sanity",
+    "test:regression": "playwright test --grep @regression",
+    "test:e2e": "playwright test --grep @end-to-end",
+    "test:datadriven": "playwright test --grep @datadriven",
+    "test:master:headed": "playwright test --grep @sanity --headed",
+    "test:sanity:debug": "playwright test --grep @sanity --debug"
+}
+
 }
